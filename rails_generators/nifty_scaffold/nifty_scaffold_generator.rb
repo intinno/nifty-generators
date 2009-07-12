@@ -205,6 +205,7 @@ protected
     opt.on("--skip-model", "Don't generate a model or migration file.") { |v| options[:skip_model] = v }
     opt.on("--skip-migration", "Don't generate migration file for model.") { |v| options[:skip_migration] = v }
     opt.on("--skip-timestamps", "Don't add timestamps to migration file.") { |v| options[:skip_timestamps] = v }
+    opt.on("--skip-paranoid", "Don't add acts_as_paranoid to model file.") { |v| options[:skip_paranoid] = v }
     opt.on("--skip-controller", "Don't generate controller, helper, or views.") { |v| options[:skip_controller] = v }
     opt.on("--invert", "Generate all controller actions except these mentioned.") { |v| options[:invert] = v }
     opt.on("--haml", "Generate HAML views instead of ERB.") { |v| options[:haml] = v }

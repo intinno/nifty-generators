@@ -7,6 +7,9 @@ class Create<%= plural_class_name %> < ActiveRecord::Migration
     <%- unless options[:skip_timestamps] -%>
       t.timestamps
     <%- end -%>
+    <%- unless options[:skip_paranoid] -%>
+      t.datetime :deleted_at
+    <%- end -%>
     end
   end
   
